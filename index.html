@@ -1,0 +1,67 @@
+<style>
+.legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+   ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+    }   
+</style>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="header">
+	<div class="main-logo">
+		<img alt="main-logo" src="http://www.fifty-five.fr/wp-content/themes/fiftyfive/assets/img/logo-55.svg">
+	</div>
+</div>
+<div class="container ">
+	<div class="row">
+		<div class="col-5">
+			<table id="q-graph">
+			</table>
+			<div id="ticks">
+			</div>
+		</div> 
+		<div class="col-1">
+			<div class='legend-title'>Players Of This Month</div>
+			<div class='legend-scale'>
+			  <ul  id = "legend" class='legend-labels'>
+			  </ul>
+			</div>
+		</div> 
+		
+	</div> 
+</div>
+
+
+<script src="chart.js"></script>
+</body>
+</html>
